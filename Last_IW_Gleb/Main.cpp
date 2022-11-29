@@ -41,12 +41,15 @@ int main() {
 	std::cout << "6. Завершенипе работы." << '\n';
 	
 	do {
+		std::cout << " Введите книгу с которой хотите работать -->\t";
+		std::cin >> x;
 		std::cout << " Выберите исполняемую команду -->\t\n";
 		std::cin >> menu;
+		
 		switch (menu) {
-		case 1: std::cout << " Показать информацию о книге \n"; show_book(arr[2]); break;
-		case 2: std::cout << " Имя автора " << author_name(arr[2]) << '\n'; break;
-		case 3: std::cout << " Книга сохранена \n"; save_book(arr[2], "file.txt"); break;
+		case 1: std::cout << " Показать информацию о книге \n"; show_book(arr[x]); break;
+		case 2: std::cout << " Имя автора " << author_name(arr[x]) << '\n'; break;
+		case 3: std::cout << " Книга сохранена \n"; save_book(arr[x], "file.txt"); break;
 		case 4: std::cout << " Добавить новую книгу \n"; add_book(arr, size); break;
 		case 5: std::cout << " Очистить данные \n"; clear_arr(arr, size); break;
 		case 6: std::cout << " Завершение работы."; break;
