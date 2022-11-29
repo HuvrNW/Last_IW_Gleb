@@ -44,7 +44,7 @@ int main() {
 		std::cout << " Выберите исполняемую команду -->\t\n";
 		std::cin >> menu;
 		switch (menu) {
-		case 1: std::cout << " Показать информацию о книге \n"; show_book(arr[size]); break;
+		case 1: std::cout << " Показать информацию о книге \n"; show_book(arr[2]); break;
 		case 2: std::cout << " Имя автора " << author_name(arr[2]) << '\n'; break;
 		case 3: std::cout << " Книга сохранена \n"; save_book(arr[2], "file.txt"); break;
 		case 4: std::cout << " Добавить новую книгу \n"; add_book(arr, size); break;
