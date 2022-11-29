@@ -43,6 +43,10 @@ int main() {
 	do {
 		std::cout << " Выберите исполняемую команду -->\t\n";
 		std::cin >> menu;
+
+		if (menu == 6)
+			break;
+
 		if (menu != 4) {
 			std::cout << " Введите книгу с которой хотите работать -->\t";
 			std::cin >> x;
