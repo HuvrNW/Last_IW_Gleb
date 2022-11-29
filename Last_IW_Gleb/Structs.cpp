@@ -30,11 +30,12 @@ void save_book(book& B, std::string path) {
 	out.close();
 }
 
-void add_book(book*& arr, const int length) {
+void add_book(book*& arr, int length) {
+
 	book* newArr = new book[length + 1]{};
 	for (int i = 0; i < length; i++)
 		newArr[i] = arr[i];
-
+	
 	std::cout << " ¬ведите название книги -->\t\t";
 	std::cin.ignore();
 	getline(std::cin, newArr[length].name_of_book);
